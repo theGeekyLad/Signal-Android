@@ -39,6 +39,7 @@ public class TextSecurePreferences {
   public  static final String CHANGE_PASSPHRASE_PREF           = "pref_change_passphrase";
   public  static final String DISABLE_PASSPHRASE_PREF          = "pref_disable_passphrase";
   public  static final String THEME_PREF                       = "pref_theme";
+  public  static final String ACCENT_PREF                      = "pref_accent";
   public  static final String LANGUAGE_PREF                    = "pref_language";
   private static final String MMSC_CUSTOM_HOST_PREF            = "pref_apn_mmsc_custom_host";
   public  static final String MMSC_HOST_PREF                   = "pref_apn_mmsc_host";
