@@ -273,7 +273,7 @@ public class WebRtcCallActivity extends BaseActivity implements SafetyNumberChan
     if (event instanceof WebRtcCallViewModel.Event.ShowVideoTooltip) {
       if (videoTooltip == null) {
         videoTooltip = TooltipPopup.forTarget(callScreen.getVideoTooltipTarget())
-                                   .setBackgroundTint(ContextCompat.getColor(this, R.color.core_ultramarine))
+                                   .setBackgroundTint(ContextCompat.getColor(this, AppCustomResources.getAccentColorId()))
                                    .setTextColor(ContextCompat.getColor(this, R.color.core_white))
                                    .setText(R.string.WebRtcCallActivity__tap_here_to_turn_on_your_video)
                                    .setOnDismissListener(() -> viewModel.onDismissedVideoTooltip())

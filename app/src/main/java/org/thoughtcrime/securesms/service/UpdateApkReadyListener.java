@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.notifications.NotificationChannels;
 import org.thoughtcrime.securesms.util.FileProviderUtil;
@@ -68,7 +69,7 @@ public class UpdateApkReadyListener extends BroadcastReceiver {
         .setContentTitle(context.getString(R.string.UpdateApkReadyListener_Signal_update))
         .setContentText(context.getString(R.string.UpdateApkReadyListener_a_new_version_of_signal_is_available_tap_to_update))
         .setSmallIcon(R.drawable.ic_notification)
-        .setColor(context.getResources().getColor(R.color.core_ultramarine))
+        .setColor(context.getResources().getColor(AppCustomResources.getAccentColorId()))
         .setPriority(NotificationCompat.PRIORITY_HIGH)
         .setCategory(NotificationCompat.CATEGORY_REMINDER)
         .setContentIntent(pendingIntent)

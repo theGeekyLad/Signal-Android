@@ -36,6 +36,7 @@ import com.annimon.stream.Collectors;
 import com.annimon.stream.Stream;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.PassphraseRequiredActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.TransportOption;
@@ -774,7 +775,7 @@ public class MediaSendActivity extends PassphraseRequiredActivity implements Med
         case VIEW_ONCE_TOOLTIP:
           TooltipPopup.forTarget(revealButton)
                       .setText(R.string.MediaSendActivity_tap_here_to_make_this_message_disappear_after_it_is_viewed)
-                      .setBackgroundTint(getResources().getColor(R.color.core_ultramarine))
+                      .setBackgroundTint(getResources().getColor(AppCustomResources.getAccentColorId()))
                       .setTextColor(getResources().getColor(R.color.core_white))
                       .setOnDismissListener(() -> TextSecurePreferences.setHasSeenViewOnceTooltip(this, true))
                       .show(TooltipPopup.POSITION_ABOVE);

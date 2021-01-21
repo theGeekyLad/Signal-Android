@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.annimon.stream.OptionalLong;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.webrtc.CallParticipantsState;
 import org.thoughtcrime.securesms.components.webrtc.WebRtcCallViewModel;
@@ -60,7 +61,7 @@ public class CallParticipantsListDialog extends BottomSheetDialogFragment {
 
   @Override
   public @NonNull View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-    ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(inflater.getContext(), R.style.TextSecure_DarkTheme);
+    ContextThemeWrapper contextThemeWrapper = new ContextThemeWrapper(inflater.getContext(), AppCustomResources.getDarkThemeId());
     LayoutInflater      themedInflater      = LayoutInflater.from(contextThemeWrapper);
 
     participantList = (RecyclerView) themedInflater.inflate(R.layout.call_participants_list_dialog, container, false);

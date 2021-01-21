@@ -19,6 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.qr.QrView;
 import org.thoughtcrime.securesms.groups.GroupId;
@@ -55,8 +56,8 @@ public class GroupLinkShareQrDialogFragment extends DialogFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
 
-    setStyle(STYLE_NO_FRAME, ThemeUtil.isDarkTheme(requireActivity()) ? R.style.TextSecure_DarkTheme
-                                                                      : R.style.TextSecure_LightTheme);
+    setStyle(STYLE_NO_FRAME, ThemeUtil.isDarkTheme(requireActivity()) ? AppCustomResources.getDarkThemeId()
+                                                                      : AppCustomResources.getLightThemeId());
   }
 
   @Override

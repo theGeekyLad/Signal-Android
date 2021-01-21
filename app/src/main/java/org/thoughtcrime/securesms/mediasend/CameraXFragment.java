@@ -36,6 +36,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.util.Executors;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.LoggingFragment;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.TooltipPopup;
@@ -286,7 +287,7 @@ public class CameraXFragment extends LoggingFragment implements CameraFragment {
 
       TooltipPopup.forTarget(captureButton)
                   .setOnDismissListener(this::neverDisplayVideoRecordingTooltipAgain)
-                  .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.core_ultramarine))
+                  .setBackgroundTint(ContextCompat.getColor(requireContext(), AppCustomResources.getAccentColorId()))
                   .setTextColor(ContextCompat.getColor(requireContext(), R.color.signal_text_toolbar_title))
                   .setText(R.string.CameraXFragment_tap_for_photo_hold_for_video)
                   .show(displayRotation == Surface.ROTATION_0 || displayRotation == Surface.ROTATION_180 ? TooltipPopup.POSITION_ABOVE : TooltipPopup.POSITION_START);

@@ -21,6 +21,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.airbnb.lottie.LottieAnimationView;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.NewConversationActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.ArcProgressBar;
@@ -63,9 +64,9 @@ public final class InsightsDashboardDialogFragment extends DialogFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     if (ThemeUtil.isDarkTheme(requireActivity())) {
-      setStyle(STYLE_NO_FRAME, R.style.TextSecure_DarkTheme);
+      setStyle(STYLE_NO_FRAME, AppCustomResources.getDarkThemeId());
     } else {
-      setStyle(STYLE_NO_FRAME, R.style.TextSecure_LightTheme);
+      setStyle(STYLE_NO_FRAME, AppCustomResources.getLightThemeId());
     }
   }
 

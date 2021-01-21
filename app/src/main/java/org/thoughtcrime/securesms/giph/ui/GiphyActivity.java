@@ -21,6 +21,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.PassphraseRequiredActivity;
 import org.thoughtcrime.securesms.R;
@@ -106,7 +107,7 @@ public class GiphyActivity extends PassphraseRequiredActivity
   }
 
   private @ColorInt int getConversationColor() {
-    return getIntent().getIntExtra(EXTRA_COLOR, ActivityCompat.getColor(this, R.color.core_ultramarine));
+    return getIntent().getIntExtra(EXTRA_COLOR, ActivityCompat.getColor(this, AppCustomResources.getAccentColorId()));
   }
 
   @Override

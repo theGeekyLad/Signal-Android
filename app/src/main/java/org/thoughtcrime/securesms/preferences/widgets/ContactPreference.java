@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 
 public class ContactPreference extends Preference {
@@ -73,7 +74,7 @@ public class ContactPreference extends Preference {
     int color;
 
     if (secure) {
-      color = getContext().getResources().getColor(R.color.core_ultramarine);
+      color = getContext().getResources().getColor(AppCustomResources.getAccentColorId());
     } else {
       color = getContext().getResources().getColor(R.color.grey_600);
     }

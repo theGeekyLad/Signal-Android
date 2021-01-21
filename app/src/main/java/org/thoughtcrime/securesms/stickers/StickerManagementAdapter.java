@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.emoji.EmojiTextView;
 import org.thoughtcrime.securesms.database.model.StickerPackRecord;
@@ -300,7 +301,7 @@ final class StickerManagementAdapter extends SectionedRecyclerViewAdapter<String
       Drawable        badge     = ContextCompat.getDrawable(context, R.drawable.ic_check_circle_white_18dp);
 
       badge.setBounds(0, 0, badge.getIntrinsicWidth(), badge.getIntrinsicHeight());
-      badge.setColorFilter(ContextCompat.getColor(context, R.color.core_ultramarine), PorterDuff.Mode.MULTIPLY);
+      badge.setColorFilter(ContextCompat.getColor(context, AppCustomResources.getAccentColorId()), PorterDuff.Mode.MULTIPLY);
       badgeSpan.setSpan(new ImageSpan(badge), 1, badgeSpan.length(), 0);
 
       return badgeSpan;

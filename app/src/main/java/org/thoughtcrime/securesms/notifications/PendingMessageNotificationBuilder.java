@@ -7,6 +7,7 @@ import android.content.Intent;
 
 import androidx.core.app.NotificationCompat;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.MainActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.database.RecipientDatabase;
@@ -19,7 +20,7 @@ public class PendingMessageNotificationBuilder extends AbstractNotificationBuild
     super(context, privacy);
 
     setSmallIcon(R.drawable.ic_notification);
-    setColor(context.getResources().getColor(R.color.core_ultramarine));
+    setColor(context.getResources().getColor(AppCustomResources.getAccentColorId()));
     setCategory(NotificationCompat.CATEGORY_MESSAGE);
 
     setContentTitle(context.getString(R.string.MessageNotifier_you_may_have_new_messages));

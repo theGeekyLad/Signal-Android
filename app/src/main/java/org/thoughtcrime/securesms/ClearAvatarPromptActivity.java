@@ -32,7 +32,7 @@ public final class ClearAvatarPromptActivity extends Activity {
 
     int message = getIntent().getIntExtra(ARG_TITLE, 0);
 
-    new AlertDialog.Builder(new ContextThemeWrapper(this, DynamicTheme.isDarkTheme(this) ? R.style.TextSecure_DarkTheme : R.style.TextSecure_LightTheme))
+    new AlertDialog.Builder(new ContextThemeWrapper(this, DynamicTheme.isDarkTheme(this) ? AppCustomResources.getDarkThemeId() : AppCustomResources.getLightThemeId()))
                    .setMessage(message)
                    .setNegativeButton(android.R.string.cancel, (dialog, which) -> finish())
                    .setPositiveButton(R.string.ClearProfileActivity_remove, (dialog, which) -> {

@@ -90,6 +90,7 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.signal.core.util.concurrent.SignalExecutors;
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.BlockUnblockDialog;
 import org.thoughtcrime.securesms.ExpirationDialog;
 import org.thoughtcrime.securesms.GroupMembersDialog;
@@ -2168,7 +2169,7 @@ public class ConversationActivity extends PassphraseRequiredActivity
     inputPanel.setMediaKeyboardToggleMode(true);
 
     TooltipPopup.forTarget(inputPanel.getMediaKeyboardToggleAnchorView())
-                .setBackgroundTint(getResources().getColor(R.color.core_ultramarine))
+                .setBackgroundTint(getResources().getColor(AppCustomResources.getAccentColorId()))
                 .setTextColor(getResources().getColor(R.color.core_white))
                 .setText(R.string.ConversationActivity_new_say_it_with_stickers)
                 .setOnDismissListener(() -> {

@@ -33,6 +33,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.RecyclerViewFastScroller.FastScrollAdapter;
 import org.thoughtcrime.securesms.contacts.ContactSelectionListAdapter.HeaderViewHolder;
@@ -302,7 +303,7 @@ public class ContactSelectionListAdapter extends CursorRecyclerViewAdapter<ViewH
     final String headerString = getHeaderString(position);
     if (isPush(position)) {
       SpannableString spannable = new SpannableString(headerString);
-      spannable.setSpan(new ForegroundColorSpan(getContext().getResources().getColor(R.color.core_ultramarine)), 0, headerString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+      spannable.setSpan(new ForegroundColorSpan(getContext().getResources().getColor(AppCustomResources.getAccentColorId())), 0, headerString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
       return spannable;
     } else {
       return headerString;

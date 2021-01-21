@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.InviteActivity;
 import org.thoughtcrime.securesms.LoggingFragment;
 import org.thoughtcrime.securesms.R;
@@ -76,8 +77,8 @@ public class CameraContactSelectionFragment extends LoggingFragment implements C
 
   @Override
   public @Nullable View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-    int            theme          = DynamicTheme.isDarkTheme(inflater.getContext()) ? R.style.TextSecure_DarkTheme
-                                                                                    : R.style.TextSecure_LightTheme;
+    int            theme          = DynamicTheme.isDarkTheme(inflater.getContext()) ? AppCustomResources.getDarkThemeId()
+                                                                                    : AppCustomResources.getLightThemeId();
     return ThemeUtil.getThemedInflater(inflater.getContext(), inflater, theme)
                     .inflate(R.layout.camera_contact_selection_fragment, container, false);
   }

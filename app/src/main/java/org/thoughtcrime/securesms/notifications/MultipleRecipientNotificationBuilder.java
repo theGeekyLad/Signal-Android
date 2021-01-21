@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.MainActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.preferences.widgets.NotificationPrivacyPreference;
@@ -26,7 +27,7 @@ public class MultipleRecipientNotificationBuilder extends AbstractNotificationBu
   public MultipleRecipientNotificationBuilder(Context context, NotificationPrivacyPreference privacy) {
     super(context, privacy);
 
-    setColor(context.getResources().getColor(R.color.core_ultramarine));
+    setColor(context.getResources().getColor(AppCustomResources.getAccentColorId()));
     setSmallIcon(R.drawable.ic_notification);
     setContentTitle(context.getString(R.string.app_name));
     // TODO [greyson] Navigation

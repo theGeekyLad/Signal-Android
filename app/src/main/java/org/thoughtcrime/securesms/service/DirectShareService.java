@@ -20,6 +20,7 @@ import androidx.appcompat.view.ContextThemeWrapper;
 import com.annimon.stream.Stream;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.database.DatabaseFactory;
 import org.thoughtcrime.securesms.database.ThreadDatabase;
@@ -117,7 +118,7 @@ public class DirectShareService extends ChooserTargetService {
   }
 
   private Bitmap getFallbackDrawable(@NonNull Recipient recipient) {
-    Context themedContext = new ContextThemeWrapper(this, R.style.TextSecure_LightTheme);
+    Context themedContext = new ContextThemeWrapper(this, AppCustomResources.getLightThemeId());
     return BitmapUtil.createFromDrawable(recipient.getFallbackContactPhotoDrawable(themedContext, false),
                                          getResources().getDimensionPixelSize(android.R.dimen.notification_large_icon_width),
                                          getResources().getDimensionPixelSize(android.R.dimen.notification_large_icon_height));

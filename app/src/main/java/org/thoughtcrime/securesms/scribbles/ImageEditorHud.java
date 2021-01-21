@@ -14,6 +14,7 @@ import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.components.TooltipPopup;
 import org.thoughtcrime.securesms.scribbles.widget.ColorPaletteAdapter;
@@ -213,7 +214,7 @@ public final class ImageEditorHud extends LinearLayout {
   public void showBlurHudTooltip() {
     TooltipPopup.forTarget(blurButton)
                 .setText(R.string.ImageEditorHud_new_blur_faces_or_draw_anywhere_to_blur)
-                .setBackgroundTint(ContextCompat.getColor(getContext(), R.color.core_ultramarine))
+                .setBackgroundTint(ContextCompat.getColor(getContext(), AppCustomResources.getAccentColorId()))
                 .setTextColor(ContextCompat.getColor(getContext(), R.color.core_white))
                 .show(TooltipPopup.POSITION_BELOW);
   }

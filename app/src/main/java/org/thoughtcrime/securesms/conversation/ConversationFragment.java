@@ -65,6 +65,7 @@ import com.annimon.stream.Stream;
 import org.signal.core.util.StreamUtil;
 import org.signal.core.util.concurrent.SignalExecutors;
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.ApplicationContext;
 import org.thoughtcrime.securesms.LoggingFragment;
 import org.thoughtcrime.securesms.PassphraseRequiredActivity;
@@ -1043,7 +1044,7 @@ public class ConversationFragment extends LoggingFragment {
       TooltipPopup.forTarget(requireActivity().findViewById(R.id.menu_context_reply))
                   .setText(text)
                   .setTextColor(getResources().getColor(R.color.core_white))
-                  .setBackgroundTint(getResources().getColor(R.color.core_ultramarine))
+                  .setBackgroundTint(getResources().getColor(AppCustomResources.getAccentColorId()))
                   .show(TooltipPopup.POSITION_BELOW);
 
       TextSecurePreferences.setHasSeenSwipeToReplyTooltip(requireContext(), true);

@@ -23,6 +23,7 @@ import com.annimon.stream.Stream;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.AppCustomResources;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.contacts.avatars.ContactColors;
 import org.thoughtcrime.securesms.contacts.avatars.ContactPhoto;
@@ -65,10 +66,10 @@ public class SingleRecipientNotificationBuilder extends AbstractNotificationBuil
 
   public SingleRecipientNotificationBuilder(@NonNull Context context, @NonNull NotificationPrivacyPreference privacy)
   {
-    super(new ContextThemeWrapper(context, R.style.TextSecure_LightTheme), privacy);
+    super(new ContextThemeWrapper(context, AppCustomResources.getLightThemeId()), privacy);
 
     setSmallIcon(R.drawable.ic_notification);
-    setColor(context.getResources().getColor(R.color.core_ultramarine));
+    setColor(context.getResources().getColor(AppCustomResources.getAccentColorId()));
     setCategory(NotificationCompat.CATEGORY_MESSAGE);
 
     if (!NotificationChannels.supported()) {
