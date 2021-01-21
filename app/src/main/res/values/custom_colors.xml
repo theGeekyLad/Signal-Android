@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- crimson red -->
+    <color name="custom_crimson_red">#f44336</color>
+    <color name="custom_crimson_red_light">#F8756C</color>
+    <color name="custom_crimson_red_dark">#C71913</color>
+    <color name="custom_crimson_red_33">#55f44336</color>
+    <color name="custom_crimson_red_50">#80f44336</color>
+
+    <!-- radioactive green -->
+    <color name="custom_radioactive_green">#00c853</color>
+    <color name="custom_radioactive_green_light">#05FF6D</color>
+    <color name="custom_radioactive_green_dark">#047533</color>
+    <color name="custom_radioactive_green_33">#5500c853</color>
+    <color name="custom_radioactive_green_50">#8000c853</color>
+
+    <!-- sunny yellow -->
+    <color name="custom_sunny_yellow">#ffab00</color>
+    <color name="custom_sunny_yellow_light">#FFBE3D</color>
+    <color name="custom_sunny_yellow_dark">#AB6F07</color>
+    <color name="custom_sunny_yellow_33">#55ffab00</color>
+    <color name="custom_sunny_yellow_50">#80ffab00</color>
+
+</resources>

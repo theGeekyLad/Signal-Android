@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- CrimsonRed -->
+    <style name="CrimsonRed">
+        <item name="colorPrimary">@color/custom_crimson_red</item>
+        <item name="colorPrimaryDark">@color/custom_crimson_red</item>
+        <item name="colorAccent">@color/custom_crimson_red</item>
+        <item name="colorAccentMedium">@color/custom_crimson_red</item>
+        <item name="colorAccentLight">@color/custom_crimson_red_light</item>
+        <item name="colorAccentDark">@color/custom_crimson_red_dark</item>
+        <item name="colorAccent33">@color/custom_crimson_red_33</item>
+        <item name="colorAccent50">@color/custom_crimson_red_50</item>
+        <item name="colorControlActivated">@color/custom_crimson_red</item>
+        <item name="colorControlHighlight">@color/custom_crimson_red</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">@color/custom_crimson_red</item>
+    </style>
+    <style name="TextSecure.DarkTheme.CrimsonRed" parent="CrimsonRed" />
+
+    <!-- RadioactiveGreen -->
+    <style name="RadioactiveGreen">
+        <item name="colorPrimary">@color/custom_radioactive_green</item>
+        <item name="colorPrimaryDark">@color/custom_radioactive_green</item>
+        <item name="colorAccent">@color/custom_radioactive_green</item>
+        <item name="colorAccentMedium">@color/custom_radioactive_green</item>
+        <item name="colorAccentLight">@color/custom_radioactive_green_light</item>
+        <item name="colorAccentDark">@color/custom_radioactive_green_dark</item>
+        <item name="colorAccent33">@color/custom_radioactive_green_33</item>
+        <item name="colorAccent50">@color/custom_radioactive_green_50</item>
+        <item name="colorControlActivated">@color/custom_radioactive_green</item>
+        <item name="colorControlHighlight">@color/custom_radioactive_green</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">@color/custom_radioactive_green</item>
+    </style>
+    <style name="TextSecure.DarkTheme.RadioactiveGreen" parent="RadioactiveGreen" />
+
+    <!-- SunnyYellow -->
+    <style name="SunnyYellow">
+        <item name="colorPrimary">@color/custom_sunny_yellow</item>
+        <item name="colorPrimaryDark">@color/custom_sunny_yellow</item>
+        <item name="colorAccent">@color/custom_sunny_yellow</item>
+        <item name="colorAccentMedium">@color/custom_sunny_yellow</item>
+        <item name="colorAccentLight">@color/custom_sunny_yellow_light</item>
+        <item name="colorAccentDark">@color/custom_sunny_yellow_dark</item>
+        <item name="colorAccent33">@color/custom_sunny_yellow_33</item>
+        <item name="colorAccent50">@color/custom_sunny_yellow_50</item>
+        <item name="colorControlActivated">@color/custom_sunny_yellow</item>
+        <item name="colorControlHighlight">@color/custom_sunny_yellow</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">@color/custom_sunny_yellow</item>
+    </style>
+    <style name="TextSecure.DarkTheme.SunnyYellow" parent="SunnyYellow" />
+
+</resources>
