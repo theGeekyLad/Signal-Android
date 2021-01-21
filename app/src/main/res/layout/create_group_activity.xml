@@ -41,7 +41,7 @@
         android:text="@string/CreateGroupActivity__skip"
         android:textColor="@color/core_white"
         android:tint="@color/core_white"
-        app:backgroundTint="@color/core_ultramarine"
+        app:backgroundTint="?colorAccentMedium"
         app:icon="@drawable/ic_arrow_end_24"
         app:iconGravity="textEnd"
         app:iconPadding="6dp"

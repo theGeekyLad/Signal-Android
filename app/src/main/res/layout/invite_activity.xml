@@ -96,7 +96,7 @@
             android:layout_height="?attr/actionBarSize"
             android:layout_width="match_parent"
             android:minHeight="?attr/actionBarSize"
-            android:background="@color/core_ultramarine"
+            android:background="?colorAccentMedium"
             android:elevation="4dp"
             app:searchTextStyle="@style/TextSecure.TitleTextStyle.Light" />
 

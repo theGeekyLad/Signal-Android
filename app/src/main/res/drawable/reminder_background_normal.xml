@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@color/core_ultramarine_dark" />
-    <item android:state_focused="true" android:drawable="@color/core_ultramarine" />
-    <item android:drawable="@color/core_ultramarine" />
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?colorAccentDark" />
+        </shape>
+    </item>
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?colorAccentMedium" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="?colorAccentMedium" />
+        </shape>
+    </item>
 </selector>

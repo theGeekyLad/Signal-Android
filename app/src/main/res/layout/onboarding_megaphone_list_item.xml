@@ -45,7 +45,7 @@
         app:backgroundTint="@color/transparent_black_40"
         app:icon="@drawable/ic_close_14"
         app:iconTint="@color/core_white"
-        app:rippleColor="@color/core_ultramarine"
+        app:rippleColor="?colorAccentMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

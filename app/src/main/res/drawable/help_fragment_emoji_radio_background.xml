@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_selected="true">
         <shape android:shape="oval">
-            <solid android:color="@color/signal_button_secondary_text" />
+            <solid android:color="?colorAccent" />
         </shape>
     </item>
     <item>

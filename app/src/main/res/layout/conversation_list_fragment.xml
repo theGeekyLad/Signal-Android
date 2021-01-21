@@ -189,7 +189,7 @@
           android:focusable="true"
           android:tint="@color/core_white"
           app:srcCompat="@drawable/ic_compose_solid_24"
-          app:backgroundTint="@color/core_ultramarine"/>
+          app:backgroundTint="?colorAccentMedium"/>
 
       <ViewStub
           android:id="@+id/megaphone_container"

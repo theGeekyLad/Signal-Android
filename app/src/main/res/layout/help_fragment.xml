@@ -197,7 +197,7 @@
         android:enabled="false"
         android:textColor="@color/white"
         app:cpb_colorIndicator="@color/white"
-        app:cpb_colorProgress="@color/core_ultramarine"
+        app:cpb_colorProgress="?colorAccentMedium"
         app:cpb_cornerRadius="4dp"
         app:cpb_selectorIdle="@color/help_fragment_next"
         app:cpb_textIdle="@string/HelpFragment__next"

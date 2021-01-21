@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             app:autoRewind="true"
             app:progressAndPlayTint="@android:color/transparent"
-            app:foregroundTintColor="@color/core_ultramarine"
+            app:foregroundTintColor="?colorAccentMedium"
             app:small="true" />
 
         <include layout="@layout/media_overview_selected_overlay" />

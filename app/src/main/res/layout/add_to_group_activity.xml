@@ -37,7 +37,7 @@
         android:layout_marginBottom="16dp"
         android:tint="@color/core_white"
         android:visibility="gone"
-        app:backgroundTint="@color/core_ultramarine"
+        app:backgroundTint="?colorAccentMedium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_arrow_end_24"

@@ -27,7 +27,7 @@
             android:paddingStart="4dp"
             android:paddingEnd="4dp"
             android:background="@color/white"
-            android:textColor="@color/core_ultramarine"
+            android:textColor="?colorAccentMedium"
             style="@style/Signal.Text.Caption"
             tools:text="Profile Name"/>
 

@@ -26,9 +26,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/media_overview_toolbar_background"
-            app:tabIndicatorColor="@color/core_ultramarine"
+            app:tabIndicatorColor="?colorAccentMedium"
             app:tabMode="scrollable"
-            app:tabSelectedTextColor="@color/core_ultramarine" />
+            app:tabSelectedTextColor="?colorAccentMedium" />
 
     </com.google.android.material.appbar.AppBarLayout>
 

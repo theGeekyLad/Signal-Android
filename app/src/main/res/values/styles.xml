@@ -19,23 +19,23 @@
     </style>
 
     <style name="AppCompatAlertDialogStyleLight" parent="Theme.AppCompat.Light.Dialog.Alert">
-        <item name="colorAccent">@color/core_ultramarine</item>
+        <item name="colorAccent">?colorAccentMedium</item>
         <item name="android:textColor">@null</item>
     </style>
 
     <style name="AppCompatAlertDialogStyleDark" parent="Theme.AppCompat.Dialog.Alert">
-        <item name="colorAccent">@color/core_ultramarine_light</item>
+        <item name="colorAccent">?colorAccentLight</item>
         <item name="android:textColor">@null</item>
     </style>
 
     <style name="AppCompatDialogStyleLight" parent="Theme.AppCompat.Light.Dialog">
-        <item name="colorAccent">@color/core_ultramarine</item>
+        <item name="colorAccent">?colorAccentMedium</item>
         <item name="android:textColor">@null</item>
         <item name="android:windowBackground">@drawable/dialog_background</item>
     </style>
 
     <style name="AppCompatDialogStyleDark" parent="Theme.AppCompat.Dialog">
-        <item name="colorAccent">@color/core_ultramarine_light</item>
+        <item name="colorAccent">?colorAccentLight</item>
         <item name="android:windowBackground">@drawable/dialog_background</item>
         <item name="android:textColor">@null</item>
     </style>
@@ -74,7 +74,7 @@
     </style>
 
     <style name="TextSecure.HighlightActionBar" parent="@style/TextSecure.DarkActionBar.Conversation">
-        <item name="background">@color/core_ultramarine</item>
+        <item name="background">?colorAccentMedium</item>
         <item name="elevation">0dp</item>
     </style>
 
@@ -87,8 +87,8 @@
 
     <style name="TextSecure.LightActionBar.TabBar"
         parent="@style/Widget.AppCompat.ActionBar.TabBar">
-        <item name="android:background">@color/core_ultramarine</item>
-        <item name="background">@color/core_ultramarine</item>
+        <item name="android:background">?colorAccentMedium</item>
+        <item name="background">?colorAccentMedium</item>
         <item name="android:textColorPrimary">@color/white</item>
         <item name="android:textColorSecondary">#BFffffff</item>
         <item name="elevation">4dp</item>
@@ -106,12 +106,12 @@
         <item name="subtitleTextStyle">@style/TextSecure.SubtitleTextStyle.Conversation</item>
         <item name="actionOverflowButtonStyle">@style/Signal.Toolbar.Overflow.Conversation</item>
         <item name="android:actionOverflowButtonStyle">@style/Signal.Toolbar.Overflow.Conversation</item>
-        <item name="colorControlHighlight">@color/core_ultramarine</item>
-        <item name="android:colorControlHighlight" tools:ignore="NewApi">@color/core_ultramarine</item>
+        <item name="colorControlHighlight">?colorAccentMedium</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">?colorAccentMedium</item>
         <item name="colorControlNormal">@color/signal_text_toolbar_subtitle</item>
         <item name="android:colorControlNormal" tools:ignore="NewApi">@color/signal_text_toolbar_subtitle</item>
-        <item name="colorControlActivated">@color/core_ultramarine</item>
-        <item name="android:colorControlActivated" tools:ignore="NewApi">@color/core_ultramarine</item>
+        <item name="colorControlActivated">?colorAccentMedium</item>
+        <item name="android:colorControlActivated" tools:ignore="NewApi">?colorAccentMedium</item>
     </style>
 
     <style name="TextSecure.DarkActionBar.ReactionOverlay">
@@ -259,12 +259,12 @@
     </style>
 
     <style name="Button.Primary" parent="Base.Widget.AppCompat.Button.Colored">
-        <item name="colorAccent">@color/core_ultramarine</item>
+        <item name="colorAccent">?colorAccentMedium</item>
         <item name="android:textColor">@color/white</item>
     </style>
 
     <style name="Button.Borderless" parent="Base.Widget.AppCompat.Button.Borderless">
-        <item name="android:textColor">?attr/colorAccent</item>
+        <item name="android:textColor">?colorAccent</item>
     </style>
 
     <style name="Button.Borderless.LowPriority" parent="Button.Borderless">
@@ -380,7 +380,7 @@
         <item name="android:layout_width">187dp</item>
         <item name="android:layout_height">187dp</item>
         <item name="arcBackgroundColor">@color/insight_progress_background</item>
-        <item name="arcForegroundColor">@color/core_ultramarine</item>
+        <item name="arcForegroundColor">?colorAccentMedium</item>
         <item name="arcProgress">0.0</item>
         <item name="arcStartAngle">120</item>
         <item name="arcSweepAngle">300</item>
@@ -415,7 +415,7 @@
     </style>
 
     <style name="Signal.MessageRequest.Button.Accept">
-        <item name="android:textColor">@color/core_ultramarine</item>
+        <item name="android:textColor">?colorAccentMedium</item>
     </style>
 
     <declare-styleable name="MaxHeightFrameLayout">
@@ -453,7 +453,7 @@
     </style>
 
     <style name="Widget.Signal.Button.CalleeDialog" parent="Widget.AppCompat.Button">
-        <item name="android:textColor">@color/core_ultramarine</item>
+        <item name="android:textColor">?colorAccentMedium</item>
         <item name="android:background">@drawable/callee_dialog_button_background</item>
     </style>
 
@@ -476,7 +476,7 @@
         <item name="iconTint">@color/white</item>
         <item name="iconTintMode">multiply</item>
         <item name="iconPadding">0dp</item>
-        <item name="rippleColor">@color/core_ultramarine</item>
+        <item name="rippleColor">?colorAccentMedium</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Signal.Button.Rounded</item>
     </style>
 

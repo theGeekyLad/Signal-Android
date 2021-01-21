@@ -97,7 +97,7 @@
                         android:contentDescription="@string/ManageRecipientActivity_message_description"
                         app:backgroundTint="@color/recipient_contact_button_color"
                         app:icon="@drawable/ic_message_primary_accent_24"
-                        app:rippleColor="@color/core_ultramarine" />
+                        app:rippleColor="?colorAccentMedium" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/recipient_video_call"
@@ -501,7 +501,7 @@
                         android:contentDescription="@string/ManageRecipientActivity_chat_color"
                         android:gravity="center"
                         tools:src="@drawable/circle_tintable"
-                        tools:tint="@color/core_ultramarine_light" />
+                        tools:tint="?colorAccentLight" />
 
                 </LinearLayout>
 

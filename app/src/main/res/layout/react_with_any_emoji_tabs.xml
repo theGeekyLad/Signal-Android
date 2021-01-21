@@ -7,7 +7,7 @@
     android:layout_gravity="bottom"
     android:background="@color/signal_background_secondary"
     app:layout_constraintTop_toTopOf="parent"
-    app:tabIndicatorColor="@color/core_ultramarine"
+    app:tabIndicatorColor="?colorAccentMedium"
     app:tabPadding="0dp"
     app:tabPaddingBottom="0dp"
     app:tabPaddingEnd="0dp"

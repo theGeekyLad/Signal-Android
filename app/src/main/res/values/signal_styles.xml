@@ -8,7 +8,7 @@
         <item name="android:textColor">@color/signal_button_primary_text_selector</item>
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="iconGravity">textEnd</item>
-        <item name="backgroundTint">@color/signal_button_primary</item>
+        <item name="backgroundTint">?colorAccent</item>
         <item name="iconTint">@color/signal_button_primary_text_selector</item>
         <item name="rippleColor">@color/signal_button_primary_ripple</item>
     </style>
@@ -57,7 +57,7 @@
         <item name="android:elevation" tools:ignore="NewApi">0dp</item>
         <item name="android:textColor">@color/signal_button_secondary_text_selector</item>
         <item name="background">@color/signal_background_tertiary</item>
-        <item name="rippleColor">@color/core_ultramarine</item>
+        <item name="rippleColor">?colorAccentMedium</item>
         <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Signal.Button.Rounded</item>
     </style>
 

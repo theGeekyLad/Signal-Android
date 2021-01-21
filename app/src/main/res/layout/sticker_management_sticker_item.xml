@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/sticker_management_divider"
         tools:src="@drawable/ic_person_white_24dp"
-        tools:tint="@color/core_ultramarine"/>
+        tools:tint="?colorAccentMedium"/>
 
     <LinearLayout
         android:id="@+id/sticker_management_title_container"

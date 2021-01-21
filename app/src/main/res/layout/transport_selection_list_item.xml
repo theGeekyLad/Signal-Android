@@ -18,7 +18,7 @@
                                                   android:tint="@color/white"
                                                   tools:src="@drawable/ic_send_lock_24"
                                                   tools:tint="@color/white"
-                                                  tools:backgroundTint="@color/core_ultramarine" />
+                                                  tools:backgroundTint="?colorAccentMedium" />
 
     <LinearLayout android:orientation="vertical"
                   android:layout_width="match_parent"

@@ -93,7 +93,7 @@
                 android:contentDescription="@string/RecipientBottomSheet_message_description"
                 app:backgroundTint="@color/recipient_contact_button_color"
                 app:icon="@drawable/ic_message_primary_accent_24"
-                app:rippleColor="@color/core_ultramarine" />
+                app:rippleColor="?colorAccentMedium" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/rbs_video_call_button"
