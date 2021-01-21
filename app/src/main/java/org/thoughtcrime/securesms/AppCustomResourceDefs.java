@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class AppCustomResourceDefs {
 
-    public static final String DEFAULT_THEME = "DefaultTheme";
+    public static final String DEFAULT_THEME = "Default";
 
     private static AppCustomResourceDefs appCustomResourceDefs;
     private final Map<String, Map<String, Integer>> customResources = new HashMap<>();
@@ -13,7 +13,7 @@ public class AppCustomResourceDefs {
 
     public AppCustomResourceDefs() {
 
-        // DefaultTheme
+        // Default
         customResource = new HashMap<>();
         customResource.put("custom_theme_base_light", R.style.TextSecure_LightTheme);
         customResource.put("custom_theme_base_dark", R.style.TextSecure_DarkTheme);
