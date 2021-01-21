@@ -49,4 +49,20 @@
     </style>
     <style name="TextSecure.LightTheme.SunnyYellow" parent="SunnyYellow" />
 
+    <!-- DeepPurple -->
+    <style name="DeepPurple">
+        <item name="colorPrimary">@color/custom_deep_purple</item>
+        <item name="colorPrimaryDark">@color/custom_deep_purple</item>
+        <item name="colorAccent">@color/custom_deep_purple</item>
+        <item name="colorAccentMedium">@color/custom_deep_purple</item>
+        <item name="colorAccentLight">@color/custom_deep_purple_light</item>
+        <item name="colorAccentDark">@color/custom_deep_purple_dark</item>
+        <item name="colorAccent33">@color/custom_deep_purple_33</item>
+        <item name="colorAccent50">@color/custom_deep_purple_50</item>
+        <item name="colorControlActivated">@color/custom_deep_purple</item>
+        <item name="colorControlHighlight">@color/custom_deep_purple</item>
+        <item name="android:colorControlHighlight" tools:ignore="NewApi">@color/custom_deep_purple</item>
+    </style>
+    <style name="TextSecure.LightTheme.DeepPurple" parent="DeepPurple" />
+
 </resources>

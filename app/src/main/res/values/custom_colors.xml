@@ -22,4 +22,11 @@
     <color name="custom_sunny_yellow_33">#55ffab00</color>
     <color name="custom_sunny_yellow_50">#80ffab00</color>
 
+    <!-- deep purple -->
+    <color name="custom_deep_purple">#651fff</color>
+    <color name="custom_deep_purple_light">#8F5BFF</color>
+    <color name="custom_deep_purple_dark">#3E08C8</color>
+    <color name="custom_deep_purple_33">#55651fff</color>
+    <color name="custom_deep_purple_50">#80651fff</color>
+
 </resources>
