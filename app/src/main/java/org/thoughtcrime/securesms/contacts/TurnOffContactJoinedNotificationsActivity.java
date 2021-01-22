@@ -8,6 +8,7 @@ import android.content.Intent;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import org.thoughtcrime.securesms.CustomAppCompatActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.database.DatabaseFactory;
 import org.thoughtcrime.securesms.database.MessageDatabase;
@@ -22,7 +23,7 @@ import java.util.List;
 /**
  * Activity which displays a dialog to confirm whether to turn off "Contact Joined Signal" notifications.
  */
-public class TurnOffContactJoinedNotificationsActivity extends AppCompatActivity {
+public class TurnOffContactJoinedNotificationsActivity extends CustomAppCompatActivity {
 
   private final static String EXTRA_THREAD_ID = "thread_id";
 

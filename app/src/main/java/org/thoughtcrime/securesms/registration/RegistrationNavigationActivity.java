@@ -16,11 +16,12 @@ import com.google.android.gms.common.api.Status;
 
 import org.greenrobot.eventbus.EventBus;
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.CustomAppCompatActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.service.VerificationCodeParser;
 import org.whispersystems.libsignal.util.guava.Optional;
 
-public final class RegistrationNavigationActivity extends AppCompatActivity {
+public final class RegistrationNavigationActivity extends CustomAppCompatActivity {
 
   private static final String TAG = Log.tag(RegistrationNavigationActivity.class);
 

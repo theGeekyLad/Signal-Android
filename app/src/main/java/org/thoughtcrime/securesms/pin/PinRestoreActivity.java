@@ -9,12 +9,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import org.thoughtcrime.securesms.CustomAppCompatActivity;
 import org.thoughtcrime.securesms.MainActivity;
 import org.thoughtcrime.securesms.PassphraseRequiredActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.lock.v2.CreateKbsPinActivity;
 
-public final class PinRestoreActivity extends AppCompatActivity {
+public final class PinRestoreActivity extends CustomAppCompatActivity {
 
   @Override
   protected void attachBaseContext(@NonNull Context newBase) {

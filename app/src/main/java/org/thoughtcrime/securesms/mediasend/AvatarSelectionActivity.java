@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 
+import org.thoughtcrime.securesms.CustomAppCompatActivity;
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.TransportOptions;
 import org.thoughtcrime.securesms.imageeditor.model.EditorModel;
@@ -27,7 +28,7 @@ import org.whispersystems.libsignal.util.guava.Optional;
 import java.io.FileDescriptor;
 import java.util.Collections;
 
-public class AvatarSelectionActivity extends AppCompatActivity implements CameraFragment.Controller, ImageEditorFragment.Controller, MediaPickerFolderFragment.Controller, MediaPickerItemFragment.Controller {
+public class AvatarSelectionActivity extends CustomAppCompatActivity implements CameraFragment.Controller, ImageEditorFragment.Controller, MediaPickerFolderFragment.Controller, MediaPickerItemFragment.Controller {
 
   private static final Point AVATAR_DIMENSIONS = new Point(AvatarHelper.AVATAR_DIMENSIONS, AvatarHelper.AVATAR_DIMENSIONS);
 

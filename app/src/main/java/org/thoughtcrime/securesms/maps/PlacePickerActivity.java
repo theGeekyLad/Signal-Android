@@ -24,6 +24,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.CustomAppCompatActivity;
 import org.thoughtcrime.securesms.R;
 
 import java.io.IOException;
@@ -35,7 +36,7 @@ import java.util.Locale;
  * <p>
  * Based on https://github.com/suchoX/PlacePicker
  */
-public final class PlacePickerActivity extends AppCompatActivity {
+public final class PlacePickerActivity extends CustomAppCompatActivity {
 
   private static final String TAG = Log.tag(PlacePickerActivity.class);
 

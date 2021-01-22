@@ -29,7 +29,7 @@ import java.util.Objects;
  * Instead, they should extend {@link PassphraseRequiredActivity} so they're protected by
  * screen lock.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends CustomAppCompatActivity {
   private static final String TAG = Log.tag(BaseActivity.class);
 
   @Override

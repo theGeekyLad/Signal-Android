@@ -14,7 +14,7 @@ import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.recipients.RecipientId;
 import org.thoughtcrime.securesms.util.CommunicationActions;
 
-public class ShortcutLauncherActivity extends AppCompatActivity {
+public class ShortcutLauncherActivity extends CustomAppCompatActivity {
 
   private static final String KEY_RECIPIENT = "recipient_id";
 
