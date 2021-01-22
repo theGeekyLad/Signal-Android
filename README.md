@@ -9,3 +9,4 @@ Signal uses your phone's data connection (WiFi/3G/4G) to communicate securely, o
 **Version:** 5.3.1
 
 - Custom app accent colors (3 new themes)
+![signal-accents](https://github.com/theGeekyLad/Signal-Android/blob/master/screenshots/signal-accents.png)
