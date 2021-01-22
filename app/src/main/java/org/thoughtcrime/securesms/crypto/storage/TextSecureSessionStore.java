@@ -60,8 +60,8 @@ public class TextSecureSessionStore implements SessionStore {
         SessionRecord sessionRecord = DatabaseFactory.getSessionDatabase(context).load(recipientId, address.getDeviceId());
 
         return sessionRecord != null &&
-               sessionRecord.getSessionState().hasSenderChain() &&
-               sessionRecord.getSessionState().getSessionVersion() == CiphertextMessage.CURRENT_VERSION;
+               sessionRecord.hasSenderChain() &&
+               sessionRecord.getSessionVersion() == CiphertextMessage.CURRENT_VERSION;
       } else {
         return false;
       }
@@ -99,6 +99,16 @@ public class TextSecureSessionStore implements SessionStore {
       } else {
         Log.w(TAG, "Tried to get sub device sessions for " + name + ", but none existed!");
         return Collections.emptyList();
+      }
+    }
+  }
+
+  public void archiveSession(@NonNull RecipientId recipientId, int deviceId) {
+    synchronized (FILE_LOCK) {
+      SessionRecord session = DatabaseFactory.getSessionDatabase(context).load(recipientId, deviceId);
+      if (session != null) {
+        session.archiveCurrentState();
+        DatabaseFactory.getSessionDatabase(context).store(recipientId, deviceId, session);
       }
     }
   }

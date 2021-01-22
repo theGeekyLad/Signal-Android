@@ -481,7 +481,7 @@ public class ConversationListFragment extends MainFragment implements ActionMode
   private void initializeListAdapters() {
     defaultAdapter          = new ConversationListAdapter(GlideApp.with(this), this);
     searchAdapter           = new ConversationListSearchAdapter(GlideApp.with(this), this, Locale.getDefault());
-    searchAdapterDecoration = new StickyHeaderDecoration(searchAdapter, false, false);
+    searchAdapterDecoration = new StickyHeaderDecoration(searchAdapter, false, false, 0);
 
     setAdapter(defaultAdapter);
 
@@ -832,10 +832,10 @@ public class ConversationListFragment extends MainFragment implements ActionMode
 
   private void onSubmitList(@NonNull List<Conversation> conversationList) {
     defaultAdapter.submitList(conversationList);
-    onPostSubmitList();
+    onPostSubmitList(conversationList.size());
   }
 
-  private void updateEmptyState(boolean isConversationEmpty) {
+  void updateEmptyState(boolean isConversationEmpty) {
     if (isConversationEmpty) {
       Log.i(TAG, "Received an empty data set.");
       list.setVisibility(View.INVISIBLE);
@@ -856,7 +856,11 @@ public class ConversationListFragment extends MainFragment implements ActionMode
     }
   }
 
-  protected void onPostSubmitList() {
+  protected void onPostSubmitList(int conversationCount) {
+    if (conversationCount >= 6 && (SignalStore.onboarding().shouldShowInviteFriends() || SignalStore.onboarding().shouldShowNewGroup())) {
+      SignalStore.onboarding().clearAll();
+      ApplicationDependencies.getMegaphoneRepository().markFinished(Megaphones.Event.ONBOARDING);
+    }
   }
 
   @Override

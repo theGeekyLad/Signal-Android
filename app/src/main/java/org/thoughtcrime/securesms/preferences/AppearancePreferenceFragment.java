@@ -9,14 +9,18 @@ import androidx.preference.ListPreference;
 import org.thoughtcrime.securesms.AppCustomResourceDefs;
 import org.thoughtcrime.securesms.ApplicationPreferencesActivity;
 import org.thoughtcrime.securesms.R;
+import org.thoughtcrime.securesms.util.ActivityTransitionUtil;
 import org.thoughtcrime.securesms.preferences.widgets.SignalListPreference;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
+import org.thoughtcrime.securesms.wallpaper.ChatWallpaperActivity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
 public class AppearancePreferenceFragment extends ListSummaryPreferenceFragment {
+
+  private static final String WALLPAPER_PREF = "pref_wallpaper";
 
   @Override
   public void onCreate(Bundle paramBundle) {
@@ -25,6 +29,11 @@ public class AppearancePreferenceFragment extends ListSummaryPreferenceFragment 
     this.findPreference(TextSecurePreferences.THEME_PREF).setOnPreferenceChangeListener(new ListSummaryListener());
     this.findPreference(TextSecurePreferences.LANGUAGE_PREF).setOnPreferenceChangeListener(new ListSummaryListener());
     this.findPreference(TextSecurePreferences.ACCENT_PREF).setOnPreferenceChangeListener(new ListSummaryListener());
+    this.findPreference(WALLPAPER_PREF).setOnPreferenceClickListener(preference -> {
+      startActivity(ChatWallpaperActivity.createIntent(requireContext()));
+      ActivityTransitionUtil.setSlideInTransition(requireActivity());
+      return true;
+    });
     initializeListSummary((ListPreference)findPreference(TextSecurePreferences.THEME_PREF));
     initializeListSummary((ListPreference)findPreference(TextSecurePreferences.LANGUAGE_PREF));
     initializeListSummary((ListPreference)findPreference(TextSecurePreferences.ACCENT_PREF));

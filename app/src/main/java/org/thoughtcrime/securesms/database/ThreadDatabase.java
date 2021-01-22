@@ -65,6 +65,7 @@ import org.whispersystems.signalservice.api.storage.SignalGroupV2Record;
 import java.io.Closeable;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -962,6 +963,19 @@ public class ThreadDatabase extends Database {
     }
   }
 
+  public Map<RecipientId, Long> getThreadIdsIfExistsFor(@NonNull RecipientId ... recipientIds) {
+    SQLiteDatabase db            = databaseHelper.getReadableDatabase();
+    SqlUtil.Query  query         = SqlUtil.buildCollectionQuery(RECIPIENT_ID, Arrays.asList(recipientIds));
+
+    Map<RecipientId, Long> results = new HashMap<>();
+    try (Cursor cursor = db.query(TABLE_NAME, new String[]{ ID, RECIPIENT_ID }, query.getWhere(), query.getWhereArgs(), null, null, null, "1")) {
+      while (cursor != null && cursor.moveToNext()) {
+        results.put(RecipientId.from(CursorUtil.requireString(cursor, RECIPIENT_ID)), CursorUtil.requireLong(cursor, ID));
+      }
+    }
+    return results;
+  }
+
   public long getOrCreateValidThreadId(@NonNull Recipient recipient, long candidateId) {
     return getOrCreateValidThreadId(recipient, candidateId, DistributionTypes.DEFAULT);
   }
@@ -1195,6 +1209,21 @@ public class ThreadDatabase extends Database {
   public @NonNull ThreadRecord getThreadRecordFor(@NonNull Recipient recipient) {
     return Objects.requireNonNull(getThreadRecord(getThreadIdFor(recipient)));
   }
+
+  public @NonNull Set<RecipientId> getAllThreadRecipients() {
+    SQLiteDatabase   db  = databaseHelper.getReadableDatabase();
+    Set<RecipientId> ids = new HashSet<>();
+
+
+    try (Cursor cursor = db.query(TABLE_NAME, new String[] { RECIPIENT_ID }, null, null, null, null, null)) {
+      while (cursor.moveToNext()) {
+        ids.add(RecipientId.from(CursorUtil.requireString(cursor, RECIPIENT_ID)));
+      }
+    }
+
+    return ids;
+  }
+
 
   @NonNull MergeResult merge(@NonNull RecipientId primaryRecipientId, @NonNull RecipientId secondaryRecipientId) {
     if (!databaseHelper.getWritableDatabase().inTransaction()) {
