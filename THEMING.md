@@ -1,10 +1,10 @@
 # _Guide:_ Creating Themes
 
-If you're reading this and are driven to contribute new themes, you're awesome!
+If you're reading this and are driven to contribute new themes, you're awesome! :rocket:
 
 It's indeed a straightforward process to add new themes and all you need to know is the HEX value of your color of choice. This guide is all you need to create new themes that would be listed on the app appearance settings.
 
-For illustration, I'm going to pick **deep purple: #651fff** as my color of choice. There are 4 files you're required to edit so let's get started!
+For illustration, I'm going to pick **deep purple: #651fff** as my color of choice. There are 4 files you're required to edit so let's get started! :fire:
 
 ```
 !! DISCLAIMER !!
@@ -26,7 +26,7 @@ As you'd have guessed, here's where your color of choice and a few of its shades
 <color name="custom_deep_purple_50">#80651fff</color>
 ```
 
-Just for the sake of it, I'm also going to call this theme _Deep Purple_ (very innovative).
+Just for the sake of it, I'm also going to call this theme _Deep Purple_ (very innovative :poop:).
 
 _**Note:** For posterity, it's essential to include the name of your theme as a comment at the top of the lines you add across all files you edit._
 
@@ -56,7 +56,7 @@ _**Note:** The last style definition has the word "light" in it -> TextSecure.**
 
 ## 3. `src/main/res/values-night/custom_dark_themes.xml`
 
-Quite intuitively, here's where the "dark theme" counterpart of your custom theme goes. In this section, ideally, you should use the lighter variant of your chosen color that goes best with dark backgrounds. Perhaps `colorAccent` could be `custom_deep_purple_light`? 
+Quite intuitively, here's where the "dark theme" counterpart of your custom theme goes. In this section, ideally, you should use the lighter variant of your chosen color that goes best with dark backgrounds. Perhaps `colorAccent` could be `custom_deep_purple_light`? :thinking:
 
 Nevertheless, I'm just going to paste the same definitions as my light theme above:
 
@@ -102,11 +102,11 @@ This section is what shows the _"Deep Purple"_ listing in the in-app accent pick
 
 _**Note:** Don't forget to replace "DeepPurple" with your theme name in the last line above -> customResources.put("**DeepPurple**", customResource);_
 
-## Are we done yet?
+## Are we done yet? :weary:
 
-Wait, you just built a new theme! Run the app with these changes and head over to, `Settings -> Appearance -> Accent` and you should see the theme you just created appear as an option. **Ensure you restart the app _(clear from recents too)_ to see the changes.**
+Wait, you just built a new theme! :tada: Run the app with these changes and head over to, `Settings -> Appearance -> Accent` and you should see the theme you just created appear as an option. **Ensure you restart the app _(clear from recents too)_ to see the changes.**
 
-Congrats! Would love to see what you've got.
+Congrats! Would love to see what you've got. :heart_eyes:
 
 ---
 
