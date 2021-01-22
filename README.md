@@ -10,6 +10,6 @@ Signal uses your phone's data connection (WiFi/3G/4G) to communicate securely, o
 
 ### Custom app accent colors (3 new themes) :art:
 
-![signal-accents](https://github.com/theGeekyLad/Signal-Android/blob/master/screenshots/signal-accents.png)
-
 Creating themes is really simple! Check out [this nice guide.](https://github.com/theGeekyLad/Signal-Android/blob/master/THEMING.md) :rocket:
+
+![signal-accents](https://github.com/theGeekyLad/Signal-Android/blob/master/screenshots/signal-accents.png)
