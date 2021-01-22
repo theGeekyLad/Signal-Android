@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Your custom themes pick up colors from here! So go ahead and define all
+    your custom colors here.
+
+    @author theGeekyLad
+ -->
+
 <resources>
 
     <!-- crimson red -->

@@ -3,6 +3,14 @@ package org.thoughtcrime.securesms;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This singletone class is where new themes are added. It's like a resource pool from where
+ * `AppCustomResources` picks up available themes and provides accessors to the right theme
+ * and theme resources which, later, is force-applied / overridden in `CustomAppCompatActivity`.
+ *
+ * @author theGeekyLad
+ */
+
 public class AppCustomResourceDefs {
 
     public static final String DEFAULT_THEME = "Default";

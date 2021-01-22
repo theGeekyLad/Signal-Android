@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    All dark theme counterparts go here. Ensure the theme name is the same as the lighter
+    counterpart.
+
+    @author theGeekyLad
+ -->
+
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- CrimsonRed -->

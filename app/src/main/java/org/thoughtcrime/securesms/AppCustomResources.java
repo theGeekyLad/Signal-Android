@@ -6,6 +6,15 @@ import org.thoughtcrime.securesms.util.TextSecurePreferences;
 
 import java.util.Map;
 
+/**
+ * This singleton class provides accessors to the right theme (accents) that must be
+ * rendered. It's consumed by every class that previously accessed color and style resources
+ * by doing `R.color.*` and `R.style.*` with `AppCustomResources.getAccentColorId()`,
+ * `AppCustomResources.getStyle()` etc. It helps keep things in one place.
+ *
+ * @author theGeekyLad
+ */
+
 public class AppCustomResources {
 
     private final Map<String, Integer> customResources;
