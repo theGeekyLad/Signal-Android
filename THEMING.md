@@ -9,7 +9,8 @@ For illustration, I'm going to pick **deep purple: #651fff** as my color of choi
 ```
 !! DISCLAIMER !!
 
-This process is as simple as changing the values in each of the sample blocks below, so if you're looking for something advanced then you're at the wrong place :D
+This process is as simple as changing the values in each of the sample blocks below,
+so if you're looking for something advanced then you're at the wrong place :D
 ```
 
 ## 1. `src/main/res/values/custom_colors.xml`
