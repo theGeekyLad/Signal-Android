@@ -6,6 +6,6 @@ Signal uses your phone's data connection (WiFi/3G/4G) to communicate securely, o
 
 ## Feature List
 
-**Version: ** 5.3.1
+**Version:** 5.3.1
 
 - Custom app accent colors (3 new themes)
